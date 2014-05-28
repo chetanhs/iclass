@@ -9,15 +9,19 @@ module.exports = function(app) {
   });
 
   app.get('/home', function(req, res) {
-		res.render('home', {title: 'Welcome', css: 'pricing'});
+		res.render('home', {title: 'Welcome', css: 'pricing', realativePath: ""});
 	});
+
+  app.get('/classifieds/create', function(req, res) {
+    res.render('classifieds/create', {title: 'Create', css: 'pricing', realativePath: "../"});
+  });
 
   app.get('/classifieds/listings', function(req, res) {
     res.render('classifieds/listing', {title: 'Automobile', css: 'blog', realativePath: "../"});
   });
 
   app.get('/classifieds', function(req, res) {
-    res.render('classifieds/index', {title: 'Categories', css: 'pricing'});
+    res.render('classifieds/index', {title: 'Categories', css: 'pricing', realativePath: ""});
   });
 
 };

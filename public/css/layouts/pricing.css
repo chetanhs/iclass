@@ -7,7 +7,6 @@ body {
 }
 
 h2, h3 {
-    letter-spacing: 0.25em;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -188,9 +187,11 @@ p {
     color: #888;
     text-align: center;
 }
-    .footer a {
-        color: #ddd;
-    }
+
+.footer a {
+    color: #ddd;
+    margin-left: 5px;
+}
 
 
 

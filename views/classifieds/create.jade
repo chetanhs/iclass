@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+  .l-content(style='padding-top: 60px;')
+    form.pure-form.pure-form-aligned
+      fieldset
+        legend
+          | Legend
+        .pure-control-group
+          label(for='title') Title
+          input(type='text', placeholder='Title', name="title")
+        .pure-control-group
+          label(for='description') Description
+          textarea(placeholder='Description', name="description")
+        .pure-control-group
+          label(for='category') Category
+          select(placeholder='Category', name="category")
+            option(value="automobile") Automobile
+        .pure-control-group
+          label(for='image-urls') Image Urls
+          input(placeholder='Image URLs', name="image-urls")
+        .pure-control-group
+          label(for='url') URL
+          input(type='url', placeholder='URL', name="url")
+        legend
+          | Contact Information
+        .pure-control-group
+          label(for='name') Name
+          input(type='text', placeholder='Name', name="name")
+        .pure-control-group
+          label(for='Address') Address
+          input(type='text', placeholder='Address', name="address")
+        .pure-control-group
+          label(for='email') Email
+          input(type='email', placeholder='Email', name="email")
+        .pure-control-group
+          label(for='phone') Phone
+          input(type='tel', placeholder='Phone Number', name="phone")
+        .pure-control-group
+          label(for='note') Note
+          textarea(placeholder='Note', name="note")
+        .pure-controls
+          button.pure-button.pure-button-primary(type='submit') Submit

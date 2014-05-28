@@ -5,7 +5,7 @@
 .information-head {margin-bottom: 0px;}
 .information-subhead {text-transform: uppercase; font-size: 16px; color: gray;}
 .tags {font-size: 14px; text-transform: uppercase;}
-.tags a{color: blue;}
+.tags a{color: blue; margin: 3px;}
 .post-head {text-decoration: none; }
 .post-head:hover{text-decoration: underline;}
 
