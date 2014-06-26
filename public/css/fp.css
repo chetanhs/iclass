@@ -1,0 +1,5 @@
+#branding, .subbranding {
+	display:none !important;
+	visibility: hidden;
+	height: 0px;
+}
